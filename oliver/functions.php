@@ -162,3 +162,71 @@ function vc_remove_frontend_links() {
     vc_disable_frontend(); // this will disable frontend editor
 }
 add_action( 'vc_after_init', 'vc_remove_frontend_links' );
+
+// dgamoni
+
+/**
+ * On checkout we have free shipping in Latvia if order is over 50 EUR. 
+ *
+ * FIRST:
+ * We should hide in this case this 2 options:
+ * Latvijas pasts (izņemšana pasta nodaļā):€3.63 (iesk. PVN)
+ * Ekspresspasts (piegāde ar kurjeru): €6.05(iesk. PVN)
+ *
+ * @param array $rates Array of rates found for the package.
+ * @return array
+ */
+function my_hide_shipping_when_free_is_available( $rates ) {
+	$free = array();
+	$free_shipping = false;
+	foreach ( $rates as $rate_id => $rate ) {
+		if ( 'free_shipping' === $rate->method_id ) {
+			$free[ $rate_id ] = $rate;
+			$free_shipping = true;
+			//break;
+		} else if ('flat_rate' != $rate->method_id){
+			$free[ $rate_id ] = $rate;
+		}
+
+	}
+	//return ! empty( $free ) ? $free : $rates;
+	if ($free_shipping) {
+		return  $free;
+	} else {
+		return  $rates;
+	}
+}
+add_filter( 'woocommerce_package_rates', 'my_hide_shipping_when_free_is_available', 100 );
+
+
+//unset free_shipping:8 - Latvijas pasts (izņemšana pasta nodaļā)
+function wc_cart_totals_shipping_html_plus_filter($id) {
+  $packages = WC()->shipping->get_packages();
+
+  foreach ( $packages as $i => $package ) {
+    $chosen_method = isset( WC()->session->chosen_shipping_methods[ $i ] ) ? WC()->session->chosen_shipping_methods[ $i ] : '';
+    $product_names = array();
+
+    if ( sizeof( $packages ) > 1 ) {
+      foreach ( $package['contents'] as $item_id => $values ) {
+        $product_names[] = $values['data']->get_title() . ' &times;' . $values['quantity'];
+      }
+    }
+
+    //var_dump($package['rates']);
+    //var_dump($package['rates']["free_shipping:8"]);
+    //unset($package['rates']["free_shipping:8"]);
+    unset($package['rates'][$id]);
+    //var_dump($package['rates']);
+
+    wc_get_template( 'cart/cart-shipping.php', array(
+      'package'              => $package,
+      'available_methods'    => $package['rates'],
+      'show_package_details' => sizeof( $packages ) > 1,
+      'package_details'      => implode( ', ', $product_names ),
+      'package_name'         => apply_filters( 'woocommerce_shipping_package_name', sprintf( _n( 'Shipping', 'Shipping %d', ( $i + 1 ), 'woocommerce' ), ( $i + 1 ) ), $i, $package ),
+      'index'                => $i,
+      'chosen_method'        => $chosen_method
+    ) );
+  }
+}
