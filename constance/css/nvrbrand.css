@@ -1,0 +1,15 @@
+.brand-container .brand-row{margin:0px;padding-bottom:30px;}
+.brand-container .brand-row:last-child{padding-bottom:0px;}
+.brand-container .columns img{margin:0px auto; display:block;}
+.brand-container .br-item-container{background-color:#fbfbfb; padding:18px 10px;}
+.brand .flexslider-carousel ul.slides li .cr-item-container{margin:0px 10px;}
+.nvr1100more .brand .flexslider-carousel ul.slides li .cr-item-container{margin:0px 15px;}
+
+.brand{border-width:1px 0px; border-style:solid;padding:5px 0px;}
+.brand .flexslider-carousel .flex-direction-nav a{
+	top:50%;
+	margin-top:-18px;
+}
+
+/* Brand */
+.brand{border-color:#eeeeee;}

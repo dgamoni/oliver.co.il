@@ -1,0 +1,2302 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Constance\n"
+"POT-Creation-Date: 2015-11-14 11:38+0700\n"
+"PO-Revision-Date: 2015-11-14 11:39+0700\n"
+"Last-Translator: \n"
+"Language-Team: Novaro Studio <novaro.studio@gmail.com>\n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+
+#: 404.php:12
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr ""
+
+#: attachment.php:21
+#: content-aside.php:33
+#: content-audio.php:39
+#: content-gallery.php:51
+#: content-image.php:48
+#: content-link.php:46
+#: content-quote.php:27
+#: content-video.php:39
+#: content.php:34
+#: single.php:126
+msgid "By"
+msgstr ""
+
+#: attachment.php:24
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: attachment.php:33
+msgid "Published"
+msgstr ""
+
+#: attachment.php:42
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: attachment.php:45
+msgid "Link to full-size image"
+msgstr ""
+
+#: attachment.php:95
+#: page.php:20
+msgid "Read More"
+msgstr ""
+
+#: attachment.php:96
+#: page.php:21
+#: single-portofolio.php:16
+#: single.php:119
+msgid "Pages:"
+msgstr ""
+
+#: attachment.php:97
+#: page.php:22
+#: single-portofolio.php:17
+msgid "Edit"
+msgstr ""
+
+#: author.php:34
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: comments.php:18
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:41
+#: comments.php:60
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42
+#: comments.php:61
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:80
+msgid "Name"
+msgstr ""
+
+#: comments.php:82
+#: engine/theme-functions.php:478
+msgid "Email"
+msgstr ""
+
+#: comments.php:84
+msgid "Website"
+msgstr ""
+
+#: comments.php:87
+msgid "Post a Comment"
+msgstr ""
+
+#: comments.php:88
+msgid "Submit"
+msgstr ""
+
+#: content-aside.php:32
+#: content-audio.php:38
+#: content-gallery.php:50
+#: content-image.php:47
+#: content-link.php:45
+#: content-quote.php:26
+#: content-video.php:38
+#: content.php:33
+#: single.php:125
+msgid "Sticky"
+msgstr ""
+
+#: content-aside.php:34
+#: content-audio.php:40
+#: content-gallery.php:52
+#: content-image.php:49
+#: content-link.php:47
+#: content-quote.php:28
+#: content-video.php:40
+#: content.php:35
+#: single.php:127
+msgid "In"
+msgstr ""
+
+#: content-aside.php:36
+#: content-audio.php:42
+#: content-gallery.php:54
+#: content-image.php:51
+#: content-link.php:49
+#: content-quote.php:30
+#: content-video.php:42
+#: content.php:37
+msgid "0 Comment"
+msgstr ""
+
+#: content-aside.php:36
+#: content-audio.php:42
+#: content-gallery.php:54
+#: content-image.php:51
+#: content-link.php:49
+#: content-quote.php:30
+#: content-video.php:42
+#: content.php:37
+#: single.php:130
+msgid "1 Comment"
+msgstr ""
+
+#: content-aside.php:36
+#: content-audio.php:42
+#: content-gallery.php:54
+#: content-image.php:51
+#: content-link.php:49
+#: content-quote.php:30
+#: content-video.php:42
+#: content.php:37
+#: single.php:130
+msgid "% Comments"
+msgstr ""
+
+#: content-audio.php:27
+#: single.php:39
+msgid "Audio"
+msgstr ""
+
+#: content-audio.php:28
+#: content-gallery.php:40
+#: content-image.php:37
+#: content-link.php:30
+#: content-video.php:28
+#: content.php:17
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: content-gallery.php:39
+#: single.php:60
+msgid "Gallery"
+msgstr ""
+
+#: content-image.php:36
+#: single.php:80
+msgid "Image"
+msgstr ""
+
+#: content-video.php:27
+#: single.php:29
+msgid "Video"
+msgstr ""
+
+#: engine/footer-functions.php:9
+msgid "Copyright"
+msgstr ""
+
+#: engine/footer-functions.php:13
+msgid "Designed by"
+msgstr ""
+
+#: engine/footer-functions.php:14
+msgid "Novaro Studio"
+msgstr ""
+
+#: engine/header-functions.php:192
+msgid "Search product..."
+msgstr ""
+
+#: engine/header-functions.php:195
+msgid "Search..."
+msgstr ""
+
+#: engine/header-functions.php:203
+msgid "Search"
+msgstr ""
+
+#: engine/header-functions.php:221
+#: engine/header-functions.php:293
+#: engine/theme-functions.php:403
+msgid "Login"
+msgstr ""
+
+#: engine/header-functions.php:226
+msgid "or"
+msgstr ""
+
+#: engine/header-functions.php:228
+#: engine/theme-functions.php:483
+msgid "Register"
+msgstr ""
+
+#: engine/header-functions.php:277
+msgid "My Cart"
+msgstr ""
+
+#: engine/header-functions.php:426
+msgid "Logout"
+msgstr ""
+
+#: engine/header-functions.php:428
+msgid "My Account"
+msgstr ""
+
+#: engine/sidebar-init.php:4
+#: framework/sidebargenerator/nvr-form.php:218
+#: framework/sidebargenerator/nvr-sidebar.php:13
+msgid "Sidebar"
+msgstr ""
+
+#: engine/sidebar-init.php:6
+msgid "Located at the left/right side of all pages and post."
+msgstr ""
+
+#: engine/sidebar-init.php:14
+msgid "Woocommerce Filter Sidebar"
+msgstr ""
+
+#: engine/sidebar-init.php:16
+msgid "Located at the top of the product list at the shop page."
+msgstr ""
+
+#: engine/sidebar-init.php:24
+msgid "Footer1 Sidebar"
+msgstr ""
+
+#: engine/sidebar-init.php:26
+msgid "Located at the footer column 1."
+msgstr ""
+
+#: engine/sidebar-init.php:34
+msgid "Footer2 Sidebar"
+msgstr ""
+
+#: engine/sidebar-init.php:36
+msgid "Located at the footer column 2."
+msgstr ""
+
+#: engine/sidebar-init.php:44
+msgid "Footer3 Sidebar"
+msgstr ""
+
+#: engine/sidebar-init.php:46
+msgid "Located at the footer column 3."
+msgstr ""
+
+#: engine/sidebar-init.php:54
+msgid "Footer4 Sidebar"
+msgstr ""
+
+#: engine/sidebar-init.php:56
+msgid "Located at the footer column 4."
+msgstr ""
+
+#: engine/sidebar-init.php:72
+msgid "A Custom sidebar created from Sidebar Manager. It's called"
+msgstr ""
+
+#: engine/theme-functions.php:146
+#: engine/theme-functions.php:151
+msgid "More"
+msgstr ""
+
+#: engine/theme-functions.php:299
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: engine/theme-functions.php:304
+#, php-format
+msgid "%1$s %2$s"
+msgstr ""
+
+#: engine/theme-functions.php:305
+#: engine/theme-functions.php:328
+msgid "(Edit)"
+msgstr ""
+
+#: engine/theme-functions.php:312
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: engine/theme-functions.php:315
+msgid "Reply"
+msgstr ""
+
+#: engine/theme-functions.php:326
+msgid "Pingback:"
+msgstr ""
+
+#: engine/theme-functions.php:398
+#: engine/theme-functions.php:477
+msgid "Username"
+msgstr ""
+
+#: engine/theme-functions.php:399
+msgid "Password"
+msgstr ""
+
+#: engine/theme-functions.php:406
+msgid "forgot password?"
+msgstr ""
+
+#: engine/theme-functions.php:416
+msgid "Enter Your Email Address"
+msgstr ""
+
+#: engine/theme-functions.php:420
+msgid "Reset Password"
+msgstr ""
+
+#: engine/theme-functions.php:421
+msgid "return to login"
+msgstr ""
+
+#: engine/theme-functions.php:442
+msgid "Username and/or Password field is empty!"
+msgstr ""
+
+#: engine/theme-functions.php:460
+msgid "Wrong username or password!"
+msgstr ""
+
+#: engine/theme-functions.php:462
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: engine/theme-functions.php:480
+msgid "A password will be e-mailed to you"
+msgstr ""
+
+#: engine/theme-functions.php:505
+msgid "Invalid username( *do not use special characters or spaces ) "
+msgstr ""
+
+#: engine/theme-functions.php:513
+msgid "Username and/or Email field is empty!"
+msgstr ""
+
+#: engine/theme-functions.php:518
+msgid "The email doesn't look right !"
+msgstr ""
+
+#: engine/theme-functions.php:524
+msgid "The email's domain doesn't look right."
+msgstr ""
+
+#: engine/theme-functions.php:531
+msgid "Username already exists.  Please choose a new one."
+msgstr ""
+
+#: engine/theme-functions.php:552
+#: engine/theme-functions.php:619
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: engine/theme-functions.php:553
+#, php-format
+msgid "Password: %s"
+msgstr ""
+
+#: engine/theme-functions.php:554
+#, php-format
+msgid "User Registration at %s"
+msgstr ""
+
+#: engine/theme-functions.php:555
+#: engine/theme-functions.php:624
+msgid "Email failed to send for some unknown reason."
+msgstr ""
+
+#: engine/theme-functions.php:558
+msgid "An email with the generated password was sent!"
+msgstr ""
+
+#: engine/theme-functions.php:563
+msgid "Email already exists.  Please choose a new one."
+msgstr ""
+
+#: engine/theme-functions.php:580
+msgid "Email field is empty!"
+msgstr ""
+
+#: engine/theme-functions.php:592
+msgid "Invalid E-mail address!"
+msgstr ""
+
+#: engine/theme-functions.php:600
+msgid "Invalid Username!"
+msgstr ""
+
+#: engine/theme-functions.php:617
+msgid "Someone requested that the password be reset for the following account:"
+msgstr ""
+
+#: engine/theme-functions.php:620
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: engine/theme-functions.php:621
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#: engine/theme-functions.php:623
+msgid "Password Reset Request"
+msgstr ""
+
+#: engine/theme-functions.php:628
+msgid "We have just sent you an email with Password reset instructions."
+msgstr ""
+
+#: engine/theme-init.php:37
+msgid "Main Menu"
+msgstr ""
+
+#: engine/theme-init.php:38
+msgid "Secondary Menu"
+msgstr ""
+
+#: engine/theme-init.php:203
+msgid "ADDED!"
+msgstr ""
+
+#: engine/theme-init.php:248
+msgid "All"
+msgstr ""
+
+#: engine/theme-init.php:267
+msgid "Filter"
+msgstr ""
+
+#: engine/theme-init.php:267
+msgid "Close"
+msgstr ""
+
+#: engine/theme-init.php:313
+msgid "Featured"
+msgstr ""
+
+#: engine/theme-init.php:327
+msgid "Quickview"
+msgstr ""
+
+#: engine/theme-init.php:383
+#: loop.php:68
+#: template-portfolio.php:183
+msgid "Load More"
+msgstr ""
+
+#: engine/theme-init.php:579
+#: framework/classes/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: engine/theme-init.php:580
+#: framework/classes/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: engine/theme-init.php:581
+#: framework/classes/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: engine/theme-init.php:582
+#: framework/classes/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: engine/theme-init.php:593
+#: framework/classes/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: engine/theme-init.php:594
+#: framework/classes/class-tgm-plugin-activation.php:399
+#: framework/classes/class-tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: engine/theme-init.php:595
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: engine/theme-metaboxes.php:22
+msgid "On"
+msgstr ""
+
+#: engine/theme-metaboxes.php:23
+msgid "Off"
+msgstr ""
+
+#: engine/theme-metaboxes.php:27
+msgid "Yes"
+msgstr ""
+
+#: engine/theme-metaboxes.php:28
+msgid "No"
+msgstr ""
+
+#: engine/theme-metaboxes.php:37
+msgid "Small"
+msgstr ""
+
+#: engine/theme-metaboxes.php:38
+msgid "Big"
+msgstr ""
+
+#: engine/theme-metaboxes.php:42
+#: engine/theme-metaboxes.php:48
+#: engine/theme-metaboxes.php:54
+#: engine/theme-metaboxes.php:100
+msgid "Default"
+msgstr ""
+
+#: engine/theme-metaboxes.php:43
+#: engine/theme-options.php:70
+msgid "Light"
+msgstr ""
+
+#: engine/theme-metaboxes.php:44
+#: engine/theme-options.php:71
+msgid "Dark"
+msgstr ""
+
+#: engine/theme-metaboxes.php:49
+#: engine/theme-metaboxes.php:60
+#: engine/theme-metaboxes.php:66
+msgid "Left"
+msgstr ""
+
+#: engine/theme-metaboxes.php:50
+#: engine/theme-metaboxes.php:61
+#: engine/theme-metaboxes.php:67
+msgid "Right"
+msgstr ""
+
+#: engine/theme-metaboxes.php:55
+msgid "Masonry 3 Columns"
+msgstr ""
+
+#: engine/theme-metaboxes.php:56
+msgid "Masonry 2 Columns"
+msgstr ""
+
+#: engine/theme-metaboxes.php:65
+msgid "Top"
+msgstr ""
+
+#: engine/theme-metaboxes.php:72
+msgid "Classic Two Columns"
+msgstr ""
+
+#: engine/theme-metaboxes.php:73
+msgid "Classic Three Columns"
+msgstr ""
+
+#: engine/theme-metaboxes.php:74
+msgid "Classic Four Columns"
+msgstr ""
+
+#: engine/theme-metaboxes.php:75
+msgid "Masonry Three Columns with space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:76
+msgid "Masonry Four Columns with space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:77
+msgid "Masonry Five Columns with space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:78
+msgid "Masonry Three Columns with no space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:79
+msgid "Masonry Four Columns with no space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:80
+msgid "Masonry Five Columns with no space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:81
+msgid "Grid Three Columns with space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:82
+msgid "Grid Four Columns with space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:83
+msgid "Grid Five Columns with space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:84
+msgid "Grid Three Columns with no space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:85
+msgid "Grid Four Columns with no space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:86
+msgid "Grid Five Columns with no space"
+msgstr ""
+
+#: engine/theme-metaboxes.php:91
+#: engine/theme-metaboxes.php:96
+msgid "100% Full-Width"
+msgstr ""
+
+#: engine/theme-metaboxes.php:101
+msgid "Square"
+msgstr ""
+
+#: engine/theme-metaboxes.php:102
+msgid "Portrait"
+msgstr ""
+
+#: engine/theme-metaboxes.php:103
+msgid "Landscape"
+msgstr ""
+
+#: engine/theme-metaboxes.php:107
+msgid "Ascending"
+msgstr ""
+
+#: engine/theme-metaboxes.php:108
+msgid "Descending"
+msgstr ""
+
+#: engine/theme-metaboxes.php:138
+msgid "Post Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:145
+#: engine/theme-metaboxes.php:186
+#: engine/theme-metaboxes.php:412
+#: engine/theme-metaboxes.php:593
+msgid "Layout"
+msgstr ""
+
+#: engine/theme-metaboxes.php:146
+#: engine/theme-metaboxes.php:187
+#: engine/theme-metaboxes.php:413
+#: engine/theme-metaboxes.php:594
+msgid ""
+"Select the layout you want on this specific post/page. Overrides default "
+"site layout."
+msgstr ""
+
+#: engine/theme-metaboxes.php:153
+msgid "External URL"
+msgstr ""
+
+#: engine/theme-metaboxes.php:154
+msgid "Input your external link in here. if you use \"Link\" format."
+msgstr ""
+
+#: engine/theme-metaboxes.php:160
+msgid "Audio File URL"
+msgstr ""
+
+#: engine/theme-metaboxes.php:161
+msgid "Input your audio file URL in here. "
+msgstr ""
+
+#: engine/theme-metaboxes.php:167
+msgid "Video File URL / Video Link"
+msgstr ""
+
+#: engine/theme-metaboxes.php:168
+msgid "Input your video file URL or video link like youtube or vimeo in here. "
+msgstr ""
+
+#: engine/theme-metaboxes.php:179
+msgid "Page Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:194
+#: engine/theme-options.php:356
+msgid "Header Menu Color"
+msgstr ""
+
+#: engine/theme-metaboxes.php:195
+msgid "Choose the color of your header menu."
+msgstr ""
+
+#: engine/theme-metaboxes.php:202
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: engine/theme-metaboxes.php:203
+msgid "Choose 'Yes' if you want to show breadcrumb."
+msgstr ""
+
+#: engine/theme-metaboxes.php:210
+#: engine/theme-metaboxes.php:420
+#: engine/theme-metaboxes.php:601
+msgid "Disable Page Title"
+msgstr ""
+
+#: engine/theme-metaboxes.php:211
+#: engine/theme-metaboxes.php:421
+#: engine/theme-metaboxes.php:602
+msgid "Choose 'Yes' if you want to remove the page title."
+msgstr ""
+
+#: engine/theme-metaboxes.php:218
+msgid "Main Content Padding Top"
+msgstr ""
+
+#: engine/theme-metaboxes.php:219
+msgid "Input the padding top value in pixel. example : 12px"
+msgstr ""
+
+#: engine/theme-metaboxes.php:225
+msgid "Main Content Padding Bottom"
+msgstr ""
+
+#: engine/theme-metaboxes.php:226
+msgid "Input the padding bottom value in pixel. example : 12px"
+msgstr ""
+
+#: engine/theme-metaboxes.php:232
+#: engine/theme-options.php:515
+msgid "Background Header"
+msgstr ""
+
+#: engine/theme-metaboxes.php:233
+msgid ""
+"Input the image URL in this textbox if you want to change the background "
+"image on the header."
+msgstr ""
+
+#: engine/theme-metaboxes.php:239
+msgid "Background Color Maincontent"
+msgstr ""
+
+#: engine/theme-metaboxes.php:240
+msgid ""
+"Input the hexcolor in this textbox if you want to change the background "
+"color of your content."
+msgstr ""
+
+#: engine/theme-metaboxes.php:246
+msgid "Page Description"
+msgstr ""
+
+#: engine/theme-metaboxes.php:247
+msgid "Input your own page description here."
+msgstr ""
+
+#: engine/theme-metaboxes.php:257
+msgid "Sidebar Option"
+msgstr ""
+
+#: engine/theme-metaboxes.php:264
+msgid "Registered Sidebar"
+msgstr ""
+
+#: engine/theme-metaboxes.php:265
+msgid "Please choose the sidebar for this page"
+msgstr ""
+
+#: engine/theme-metaboxes.php:276
+msgid "Page Slider Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:283
+msgid "Enable Slider"
+msgstr ""
+
+#: engine/theme-metaboxes.php:284
+msgid "Choose 'On' if you want to show the slider."
+msgstr ""
+
+#: engine/theme-metaboxes.php:291
+msgid "Slider Category"
+msgstr ""
+
+#: engine/theme-metaboxes.php:292
+msgid "You need to select the slider category to make the slider works."
+msgstr ""
+
+#: engine/theme-metaboxes.php:298
+msgid "External Slider Shortcode"
+msgstr ""
+
+#: engine/theme-metaboxes.php:299
+msgid ""
+"You can put the layerslider or revolution slider shortcode in here. It will "
+"overwrite the slider category."
+msgstr ""
+
+#: engine/theme-metaboxes.php:309
+msgid "Page Blog Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:316
+msgid "Blog Categories"
+msgstr ""
+
+#: engine/theme-metaboxes.php:317
+msgid "You need to tick the blog categories to make the template blog works."
+msgstr ""
+
+#: engine/theme-metaboxes.php:323
+msgid "Blog Type"
+msgstr ""
+
+#: engine/theme-metaboxes.php:324
+msgid "Choose the type of the blog that you want to show."
+msgstr ""
+
+#: engine/theme-metaboxes.php:331
+#: engine/theme-options.php:588
+#: engine/theme-options.php:614
+msgid "Use Infinite Scrolls?"
+msgstr ""
+
+#: engine/theme-metaboxes.php:332
+msgid "Choose 'On' if you want to use infinite scrolls."
+msgstr ""
+
+#: engine/theme-metaboxes.php:343
+msgid "Page Portfolio Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:350
+msgid "Portfolio Type"
+msgstr ""
+
+#: engine/theme-metaboxes.php:351
+msgid "Select the type of your portfolio."
+msgstr ""
+
+#: engine/theme-metaboxes.php:358
+msgid "Portfolio Container"
+msgstr ""
+
+#: engine/theme-metaboxes.php:359
+msgid "Select the type of container for your portfolio."
+msgstr ""
+
+#: engine/theme-metaboxes.php:366
+msgid "Portfolio Categories"
+msgstr ""
+
+#: engine/theme-metaboxes.php:367
+msgid ""
+"Select more than one portfolio category to make the portfolio filter works."
+msgstr ""
+
+#: engine/theme-metaboxes.php:373
+msgid "Use Auto Load More?"
+msgstr ""
+
+#: engine/theme-metaboxes.php:374
+msgid "Tick this checkbox if you want to use a Load More functionality."
+msgstr ""
+
+#: engine/theme-metaboxes.php:380
+msgid "Portfolio Showposts"
+msgstr ""
+
+#: engine/theme-metaboxes.php:381
+msgid "Input the number of portfolio items that you want to show per page."
+msgstr ""
+
+#: engine/theme-metaboxes.php:387
+msgid "Portfolio Order By"
+msgstr ""
+
+#: engine/theme-metaboxes.php:388
+msgid ""
+"(optional). Sort retrieved portfolio items by parameter. Defaults to 'date'"
+msgstr ""
+
+#: engine/theme-metaboxes.php:394
+msgid "Portfolio Order"
+msgstr ""
+
+#: engine/theme-metaboxes.php:395
+msgid ""
+"(optional). Designates the ascending or descending order of the 'Portfolio "
+"Order By' parameter. Defaults to 'DESC'."
+msgstr ""
+
+#: engine/theme-metaboxes.php:405
+msgid "Portfolio Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:428
+msgid "Image Size"
+msgstr ""
+
+#: engine/theme-metaboxes.php:429
+msgid "Select the image size for your portfolio item."
+msgstr ""
+
+#: engine/theme-metaboxes.php:436
+msgid "Custom Thumbnail"
+msgstr ""
+
+#: engine/theme-metaboxes.php:437
+#: engine/theme-metaboxes.php:569
+msgid ""
+"(optional). You can input the custom image URL to override the 'Set Featured "
+"Image'"
+msgstr ""
+
+#: engine/theme-metaboxes.php:443
+#: engine/theme-metaboxes.php:536
+#: engine/theme-metaboxes.php:554
+msgid "External Link"
+msgstr ""
+
+#: engine/theme-metaboxes.php:444
+msgid ""
+"(optional). You can input the URL if you want to link the portfolio item to "
+"another website."
+msgstr ""
+
+#: engine/theme-metaboxes.php:454
+msgid "Portfolio Gallery"
+msgstr ""
+
+#: engine/theme-metaboxes.php:461
+msgid "Portfolio Images Gallery"
+msgstr ""
+
+#: engine/theme-metaboxes.php:462
+msgid "You can select the images for your portfolio from here."
+msgstr ""
+
+#: engine/theme-metaboxes.php:472
+msgid "People Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:479
+msgid "People Information"
+msgstr ""
+
+#: engine/theme-metaboxes.php:480
+#: engine/theme-metaboxes.php:487
+msgid "Input your own people post information here."
+msgstr ""
+
+#: engine/theme-metaboxes.php:486
+msgid "Pinterest Link"
+msgstr ""
+
+#: engine/theme-metaboxes.php:493
+msgid "Facebook Link"
+msgstr ""
+
+#: engine/theme-metaboxes.php:494
+#: engine/theme-metaboxes.php:501
+msgid "Input the people facebook link in here."
+msgstr ""
+
+#: engine/theme-metaboxes.php:500
+msgid "Twitter Link"
+msgstr ""
+
+#: engine/theme-metaboxes.php:511
+msgid "Testimonial Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:518
+msgid "Testimonial Information"
+msgstr ""
+
+#: engine/theme-metaboxes.php:519
+msgid "Input your own testimonial post information here."
+msgstr ""
+
+#: engine/theme-metaboxes.php:529
+msgid "Brand Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:537
+msgid "Input the external link for your brand post in here. (optional)"
+msgstr ""
+
+#: engine/theme-metaboxes.php:547
+msgid "Slider Options"
+msgstr ""
+
+#: engine/theme-metaboxes.php:555
+msgid ""
+"(optional). You can input the URL if you want to link the slider image to "
+"another website."
+msgstr ""
+
+#: engine/theme-metaboxes.php:561
+msgid "Top Text"
+msgstr ""
+
+#: engine/theme-metaboxes.php:562
+msgid "(optional). You can input the text above the title in here."
+msgstr ""
+
+#: engine/theme-metaboxes.php:568
+msgid "Custom Image URL"
+msgstr ""
+
+#: engine/theme-metaboxes.php:575
+msgid "Button Text"
+msgstr ""
+
+#: engine/theme-metaboxes.php:576
+msgid "(optional). You can input the custom text for your button."
+msgstr ""
+
+#: engine/theme-metaboxes.php:586
+msgid "Product Options"
+msgstr ""
+
+#: engine/theme-options.php:53
+msgid "Image logo"
+msgstr ""
+
+#: engine/theme-options.php:54
+msgid "Text-based logo"
+msgstr ""
+
+#: engine/theme-options.php:58
+msgid "Version 1"
+msgstr ""
+
+#: engine/theme-options.php:59
+msgid "Version 2"
+msgstr ""
+
+#: engine/theme-options.php:60
+msgid "Version 3"
+msgstr ""
+
+#: engine/theme-options.php:61
+msgid "Version 4"
+msgstr ""
+
+#: engine/theme-options.php:65
+msgid "Above the logo"
+msgstr ""
+
+#: engine/theme-options.php:66
+msgid "Below the logo"
+msgstr ""
+
+#: engine/theme-options.php:75
+msgid "Fixed"
+msgstr ""
+
+#: engine/theme-options.php:76
+msgid "Absolute"
+msgstr ""
+
+#: engine/theme-options.php:80
+msgid "Full-Width Layout"
+msgstr ""
+
+#: engine/theme-options.php:81
+msgid "Boxed Layout"
+msgstr ""
+
+#: engine/theme-options.php:211
+msgid "General Settings"
+msgstr ""
+
+#: engine/theme-options.php:220
+msgid "Column Layout"
+msgstr ""
+
+#: engine/theme-options.php:221
+msgid "Select the default column layout. Default layout is Two Column Left."
+msgstr ""
+
+#: engine/theme-options.php:229
+msgid "Footer Sidebar Layout"
+msgstr ""
+
+#: engine/theme-options.php:230
+msgid "Select footer sidebar layout. Default sidebar is four column."
+msgstr ""
+
+#: engine/theme-options.php:238
+msgid "Disable Responsive Feature?"
+msgstr ""
+
+#: engine/theme-options.php:239
+msgid "Select this checkbox to disable the responsive website feature."
+msgstr ""
+
+#: engine/theme-options.php:246
+msgid "Logo Type"
+msgstr ""
+
+#: engine/theme-options.php:247
+msgid ""
+"If text-based logo is activated, enter the logo name and logo tagline in the "
+"fields below."
+msgstr ""
+
+#: engine/theme-options.php:257
+msgid "Logo Name"
+msgstr ""
+
+#: engine/theme-options.php:258
+msgid "Put your logo name in here."
+msgstr ""
+
+#: engine/theme-options.php:266
+msgid "Logo Tagline"
+msgstr ""
+
+#: engine/theme-options.php:267
+msgid "Put your tagline in here."
+msgstr ""
+
+#: engine/theme-options.php:275
+msgid "Dark Logo Image"
+msgstr ""
+
+#: engine/theme-options.php:278
+#: engine/theme-options.php:287
+msgid "If image logo is activated, upload the logo image."
+msgstr ""
+
+#: engine/theme-options.php:284
+msgid "Light Logo Image"
+msgstr ""
+
+#: engine/theme-options.php:293
+msgid "Disable Footer Sidebar?"
+msgstr ""
+
+#: engine/theme-options.php:294
+msgid "Select this checkbox to disable footer sidebar feature."
+msgstr ""
+
+#: engine/theme-options.php:301
+msgid "Footer Text"
+msgstr ""
+
+#: engine/theme-options.php:302
+#: engine/theme-options.php:311
+msgid "You can use html tag in here."
+msgstr ""
+
+#: engine/theme-options.php:310
+msgid "Footer Text 2"
+msgstr ""
+
+#: engine/theme-options.php:323
+msgid "Style Settings"
+msgstr ""
+
+#: engine/theme-options.php:332
+msgid "Container's Width"
+msgstr ""
+
+#: engine/theme-options.php:333
+msgid "You can change the global container\\s width from here"
+msgstr ""
+
+#: engine/theme-options.php:334
+msgid "Set the length of your container's width between 940px - 1200px"
+msgstr ""
+
+#: engine/theme-options.php:345
+msgid "Theme Layout"
+msgstr ""
+
+#: engine/theme-options.php:346
+msgid "Choose the layout style that suits your need"
+msgstr ""
+
+#: engine/theme-options.php:357
+msgid "Choose the color of your header menu"
+msgstr ""
+
+#: engine/theme-options.php:367
+msgid "Container Layout"
+msgstr ""
+
+#: engine/theme-options.php:368
+msgid ""
+"Choose the container layout of your website. boxed layout cannot be used if "
+"you use Theme Layout : version 9, 11, and 12."
+msgstr ""
+
+#: engine/theme-options.php:378
+msgid "Theme Color Options"
+msgstr ""
+
+#: engine/theme-options.php:379
+msgid "Choose the color that suit your need"
+msgstr ""
+
+#: engine/theme-options.php:387
+msgid "General Fonts"
+msgstr ""
+
+#: engine/theme-options.php:388
+msgid "Specify the body font properties."
+msgstr ""
+
+#: engine/theme-options.php:402
+msgid "Bigtext Shortcode Fonts"
+msgstr ""
+
+#: engine/theme-options.php:403
+msgid "Choose the font for [bigtext] shortcode."
+msgstr ""
+
+#: engine/theme-options.php:416
+msgid "Heading Fonts"
+msgstr ""
+
+#: engine/theme-options.php:417
+msgid "Choose the font styles for h1, h2, h3, h4, h5, h6."
+msgstr ""
+
+#: engine/theme-options.php:433
+msgid "Menu Navigation Fonts"
+msgstr ""
+
+#: engine/theme-options.php:434
+msgid "Choose the font for main menu."
+msgstr ""
+
+#: engine/theme-options.php:452
+msgid "Secondary Menu Navigation Fonts"
+msgstr ""
+
+#: engine/theme-options.php:453
+msgid "Choose the font for secondary menu."
+msgstr ""
+
+#: engine/theme-options.php:472
+msgid "Secondary Background Settings"
+msgstr ""
+
+#: engine/theme-options.php:473
+msgid "Change the secondary background CSS."
+msgstr ""
+
+#: engine/theme-options.php:480
+msgid "Secondary Fonts"
+msgstr ""
+
+#: engine/theme-options.php:481
+msgid ""
+"Choose the font for your secondary font. You can use it by using "
+"\"nvrsecondfont\" class in your tag."
+msgstr ""
+
+#: engine/theme-options.php:499
+msgid "Background Settings"
+msgstr ""
+
+#: engine/theme-options.php:500
+msgid "Change the background CSS."
+msgstr ""
+
+#: engine/theme-options.php:507
+msgid "Disable Page Title?"
+msgstr ""
+
+#: engine/theme-options.php:508
+msgid "Select this checkbox to disable page title container."
+msgstr ""
+
+#: engine/theme-options.php:516
+msgid "Change the background on header."
+msgstr ""
+
+#: engine/theme-options.php:523
+msgid "Background Footer"
+msgstr ""
+
+#: engine/theme-options.php:524
+msgid "Change the background on footer."
+msgstr ""
+
+#: engine/theme-options.php:535
+msgid "Icon"
+msgstr ""
+
+#: engine/theme-options.php:536
+#, php-format
+msgid "Input your %s URL in here"
+msgstr ""
+
+#: engine/theme-options.php:543
+msgid "Social Network"
+msgstr ""
+
+#: engine/theme-options.php:551
+msgid "Woocommerce Settings"
+msgstr ""
+
+#: engine/theme-options.php:560
+msgid "Using Ajax on Shop Page?"
+msgstr ""
+
+#: engine/theme-options.php:561
+msgid ""
+"If you tick this checkbox, the shop page will use ajax for loading the "
+"product items."
+msgstr ""
+
+#: engine/theme-options.php:567
+msgid "Using Masonry Layout?"
+msgstr ""
+
+#: engine/theme-options.php:568
+msgid ""
+"If you tick this checkbox, the shop page will use masonry layout for showing "
+"the product items."
+msgstr ""
+
+#: engine/theme-options.php:574
+msgid "Use Product Filter For Masonry Layout?"
+msgstr ""
+
+#: engine/theme-options.php:575
+msgid ""
+"If you tick this checkbox, the Filter Button will appear in the top of the "
+"shop page."
+msgstr ""
+
+#: engine/theme-options.php:581
+msgid "Disable Shop Search"
+msgstr ""
+
+#: engine/theme-options.php:582
+msgid "Select this checkbox to disable searchbox at the top."
+msgstr ""
+
+#: engine/theme-options.php:589
+msgid ""
+"If you tick this checkbox, the shop page will replace the pagination with "
+"Infinite Scrolls (\"Load More\" Button)."
+msgstr ""
+
+#: engine/theme-options.php:596
+msgid "Blog Settings"
+msgstr ""
+
+#: engine/theme-options.php:605
+msgid "Blog Layouts"
+msgstr ""
+
+#: engine/theme-options.php:606
+msgid "Select the default layout for your blog page."
+msgstr ""
+
+#: engine/theme-options.php:615
+msgid ""
+"If you tick this checkbox, the blog page will replace the pagination with "
+"Infinite Scrolls (\"Load More\" Button)."
+msgstr ""
+
+#: engine/theme-options.php:622
+msgid "Slider Settings"
+msgstr ""
+
+#: engine/theme-options.php:631
+msgid "Arrange Slider Post"
+msgstr ""
+
+#: engine/theme-options.php:632
+msgid "Select the order for your slider. the default is Ascending"
+msgstr ""
+
+#: engine/theme-options.php:640
+msgid "Slider Effect"
+msgstr ""
+
+#: engine/theme-options.php:641
+msgid "Please select transition effect. The default is fade"
+msgstr ""
+
+#: engine/theme-options.php:649
+msgid "Slider Interval"
+msgstr ""
+
+#: engine/theme-options.php:650
+msgid "Please enter number for slider interval. Default is 8000"
+msgstr ""
+
+#: engine/theme-options.php:658
+msgid "Disable Slider Text"
+msgstr ""
+
+#: engine/theme-options.php:659
+msgid "Select this checkbox to disable the slider text."
+msgstr ""
+
+#: engine/theme-options.php:666
+msgid "Disable Slider Navigation"
+msgstr ""
+
+#: engine/theme-options.php:667
+msgid "Select this checkbox to disable navigation."
+msgstr ""
+
+#: engine/theme-options.php:674
+msgid "Disable Slider Previous/Next Navigation"
+msgstr ""
+
+#: engine/theme-options.php:675
+msgid "Select this checkbox to disable previous/next navigation."
+msgstr ""
+
+#: engine/theme-options.php:682
+msgid "Miscellaneous"
+msgstr ""
+
+#: engine/theme-options.php:691
+msgid "Disable Minicart"
+msgstr ""
+
+#: engine/theme-options.php:692
+msgid "Select this checkbox to disable minicart at the top."
+msgstr ""
+
+#: engine/theme-options.php:699
+msgid "Disable Front End Login Form"
+msgstr ""
+
+#: engine/theme-options.php:700
+msgid "Select this checkbox to disable front end login form at the top."
+msgstr ""
+
+#: engine/theme-options.php:707
+msgid "Right Menu Bar"
+msgstr ""
+
+#: engine/theme-options.php:708
+msgid "Choose whether to remove the right menu bar or not."
+msgstr ""
+
+#: engine/theme-options.php:716
+msgid "Enable After Content Section"
+msgstr ""
+
+#: engine/theme-options.php:717
+msgid "Select this checkbox to enable the After Content Section."
+msgstr ""
+
+#: engine/theme-options.php:724
+msgid "My Account URL"
+msgstr ""
+
+#: engine/theme-options.php:725
+msgid "Put your my account URL in here."
+msgstr ""
+
+#: engine/theme-options.php:733
+msgid "Background After Content Section"
+msgstr ""
+
+#: engine/theme-options.php:734
+msgid "Change the background on after content section."
+msgstr ""
+
+#: engine/theme-options.php:741
+msgid "After Content Text"
+msgstr ""
+
+#: engine/theme-options.php:742
+msgid "you can use html tag in here."
+msgstr ""
+
+#: engine/theme-options.php:750
+msgid "Demo Mode"
+msgstr ""
+
+#: engine/theme-options.php:751
+msgid "For demonstration purpose only."
+msgstr ""
+
+#: engine/theme-options.php:763
+msgid "Theme Information 1"
+msgstr ""
+
+#: engine/theme-options.php:769
+msgid "Theme Information 2"
+msgstr ""
+
+#: engine/theme-options.php:794
+#: engine/theme-options.php:795
+msgid "Theme Options"
+msgstr ""
+
+#: engine/theme-scripts.php:82
+msgid "Loading More Portfolio"
+msgstr ""
+
+#: engine/theme-scripts.php:83
+msgid "Loading More Posts"
+msgstr ""
+
+#: engine/theme-scripts.php:84
+msgid "All Items are Loaded"
+msgstr ""
+
+#: engine/theme-scripts.php:85
+msgid "Items"
+msgstr ""
+
+#: engine/theme-scripts.php:86
+msgid "Loading..."
+msgstr ""
+
+#: framework/classes/class-front-menu-walker.php:297
+#: headers/header-nvrlayout1.php:11
+#: headers/header-nvrlayout2.php:11
+#: headers/header-nvrlayout3.php:11
+#: headers/header-nvrlayout4.php:11
+msgid "Menu"
+msgstr ""
+
+#. translators: %s: title of menu item which is invalid
+#: framework/classes/class-mega-menu-walker.php:76
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#. translators: %s: title of menu item in draft status
+#: framework/classes/class-mega-menu-walker.php:80
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:93
+msgid "sub item"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:108
+msgid "Move up"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:121
+msgid "Move down"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:123
+#: framework/classes/class-mega-menu-walker.php:125
+msgid "Edit Menu Item"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:134
+msgid "URL"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:141
+msgid "Navigation Label"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:147
+msgid "Title Attribute"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:154
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:159
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:165
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:171
+msgid "Description"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:173
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:197
+msgid "Move"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:198
+msgid "Up one"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:199
+msgid "Down one"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:202
+msgid "To the top"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:209
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:222
+msgid "Remove"
+msgstr ""
+
+#: framework/classes/class-mega-menu-walker.php:223
+msgid "Cancel"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:400
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:828
+#: framework/classes/class-tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:935
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:935
+#: framework/classes/class-tgm-plugin-activation.php:938
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:938
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3370
+#: framework/classes/class-tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3370
+#: framework/classes/class-tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3376
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/classes/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:111
+#: framework/functions/metaboxes/metaboxes.php:123
+msgid "Delete image"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:111
+#: framework/functions/metaboxes/metaboxes.php:123
+msgid "Delete"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:123
+msgid "Add Images to Post Gallery"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:123
+msgid "Add to gallery"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:123
+msgid "Add post gallery images"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:131
+msgid "Add Section"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:138
+msgid "Remove Section"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:141
+msgid "BG Color"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:142
+msgid "BG Image"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:143
+msgid "Custom Class"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:146
+msgid "Content"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:175
+msgid "Select Post Category"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:221
+msgid "Select Slider Category"
+msgstr ""
+
+#: framework/functions/metaboxes/metaboxes.php:272
+msgid "Select Portfolio Category"
+msgstr ""
+
+#: framework/nvr-general-functions.php:120
+#, php-format
+msgid "Categories: %1$s <br/> Tags: %2$s"
+msgstr ""
+
+#: framework/nvr-general-functions.php:122
+#, php-format
+msgid "Categories: %1$s"
+msgstr ""
+
+#: framework/nvr-general-functions.php:149
+msgid "Click for Home"
+msgstr ""
+
+#: framework/nvr-general-functions.php:149
+msgid "Home"
+msgstr ""
+
+#: framework/nvr-general-functions.php:316
+msgid "Standard Dropdown"
+msgstr ""
+
+#: framework/nvr-general-functions.php:317
+msgid "Multicolumn Dropdown"
+msgstr ""
+
+#: framework/nvr-general-functions.php:323
+msgid "Options of Dropdown"
+msgstr ""
+
+#: framework/nvr-general-functions.php:324
+msgid "Submenu Type"
+msgstr ""
+
+#: framework/nvr-general-functions.php:336
+msgid "Icon Class (you can use font awesome or line icon class)"
+msgstr ""
+
+#: framework/nvr-general-functions.php:341
+msgid "Submenu Columns (Not For Standard Drops)"
+msgstr ""
+
+#: framework/nvr-general-functions.php:350
+msgid "Enable Full Width Dropdown (only for horizontal menu)"
+msgstr ""
+
+#: framework/nvr-general-functions.php:354
+msgid "Dropdown Background Image"
+msgstr ""
+
+#: framework/nvr-general-functions.php:445
+msgid "Select Image"
+msgstr ""
+
+#: framework/nvr-general-functions.php:512
+msgid "Keep original"
+msgstr ""
+
+#: framework/nvr-general-functions.php:512
+msgid "Stretch to width"
+msgstr ""
+
+#: framework/nvr-general-functions.php:512
+msgid "Stretch to height"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:7
+msgid "settings saved."
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:145
+msgid "Please input the textbox first!"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:160
+msgid "Are you sure you want to delete this item?"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:226
+#: framework/sidebargenerator/nvr-sidebar.php:17
+msgid "Sidebar Generator"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:229
+msgid "Add"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:230
+#: framework/sidebargenerator/nvr-sidebar.php:18
+msgid "Please enter name of new sidebar"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:252
+msgid "Restore Defaults"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:252
+msgid "Click OK to reset. Any theme settings will be lost!"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-form.php:253
+msgid "Save Changes"
+msgstr ""
+
+#: framework/sidebargenerator/nvr-sidebar.php:10
+#: framework/sidebargenerator/nvr-sidebar.php:35
+msgid "Sidebar Manager"
+msgstr ""
+
+#: loop.php:31
+msgid "Not Found"
+msgstr ""
+
+#: loop.php:33
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: loop.php:96
+#: taxonomy-portfoliocat.php:72
+#: template-portfolio.php:211
+msgid "Previous"
+msgstr ""
+
+#: loop.php:97
+#: taxonomy-portfoliocat.php:73
+#: template-portfolio.php:212
+msgid "Next"
+msgstr ""
+
+#: searchform.php:12
+msgid "Enter the keyword..."
+msgstr ""
+
+#: single.php:85
+msgid "Quote"
+msgstr ""
+
+#: single.php:90
+msgid "Link"
+msgstr ""
+
+#: single.php:95
+msgid "Aside"
+msgstr ""
+
+#: single.php:128
+msgid "Tags in"
+msgstr ""
+
+#: single.php:130
+msgid "No Comment"
+msgstr ""
+
+#: single.php:142
+msgid "Previous Article"
+msgstr ""
+
+#: single.php:146
+msgid "Next Article"
+msgstr ""
+
+#: single.php:156
+msgid "About Author"
+msgstr ""
+
+#: slider.php:45
+#: slider.php:87
+msgid "Shop Now"
+msgstr ""
+
+#: template-portfolio.php:66
+msgid "All Categories"
+msgstr ""
+
+#: title.php:17
+#: title.php:51
+msgid "Blog"
+msgstr ""
+
+#: title.php:24
+msgid "Daily Archives"
+msgstr ""
+
+#: title.php:26
+msgid "Monthly Archives"
+msgstr ""
+
+#: title.php:28
+msgid "Yearly Archives"
+msgstr ""
+
+#: title.php:30
+#, php-format
+msgid "Author Archives %s"
+msgstr ""
+
+#: title.php:38
+msgid "Search Results for"
+msgstr ""
+
+#: title.php:43
+msgid "404 Page"
+msgstr ""
+
+#: widgets/nvr-recent-comment.php:6
+#: widgets/nvr-recent-comment.php:7
+msgid "Constance - Recent Comments"
+msgstr ""
+
+#: widgets/nvr-recent-comment.php:14
+msgid "Constance Recent Comments"
+msgstr ""
+
+#: widgets/nvr-recent-comment.php:65
+#: widgets/nvr-recent-posts.php:88
+#: widgets/nvr-woo-price-range.php:189
+#: widgets/nvr-woo-product-sort.php:132
+msgid "Title:"
+msgstr ""
+
+#: widgets/nvr-recent-comment.php:67
+msgid "Number of Comments:"
+msgstr ""
+
+#: widgets/nvr-recent-posts.php:7
+#: widgets/nvr-recent-posts.php:8
+msgid "Constance - Latest Posts"
+msgstr ""
+
+#: widgets/nvr-recent-posts.php:15
+msgid "Latest Posts"
+msgstr ""
+
+#: widgets/nvr-recent-posts.php:50
+#: widgets/nvr-woo-price-range.php:150
+#: widgets/nvr-woo-product-sort.php:103
+msgid "Permanent Link to"
+msgstr ""
+
+#: widgets/nvr-recent-posts.php:90
+msgid "Category:"
+msgstr ""
+
+#: widgets/nvr-recent-posts.php:101
+msgid "Number of Post:"
+msgstr ""
+
+#: widgets/nvr-recent-posts.php:104
+msgid "Disable Thumb:"
+msgstr ""
+
+#: widgets/nvr-woo-price-range.php:7
+#: widgets/nvr-woo-price-range.php:8
+msgid "Constance - Price Range"
+msgstr ""
+
+#: widgets/nvr-woo-price-range.php:28
+msgid "Price Range"
+msgstr ""
+
+#: widgets/nvr-woo-price-range.php:191
+msgid "Range Interval:"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:7
+#: widgets/nvr-woo-product-sort.php:8
+msgid "Constance - Product Sorting"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:18
+msgid "Product Sorting"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:21
+msgid "Default sorting"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:22
+msgid "Sort by popularity"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:23
+msgid "Sort by average rating"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:24
+msgid "Sort by newness"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:25
+msgid "Sort by price: low to high"
+msgstr ""
+
+#: widgets/nvr-woo-product-sort.php:26
+msgid "Sort by price: high to low"
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:17
+msgid "No products were found matching your selection."
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:17
+msgid "Back"
+msgstr ""
