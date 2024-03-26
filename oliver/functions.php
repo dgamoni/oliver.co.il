@@ -230,3 +230,359 @@ function wc_cart_totals_shipping_html_plus_filter($id) {
     ) );
   }
 }
+
+//unset free_shipping:8 and flat_rate:5
+function wc_cart_totals_shipping_html_plus_filter_array($id) {
+  $packages = WC()->shipping->get_packages();
+
+  foreach ( $packages as $i => $package ) {
+    $chosen_method = isset( WC()->session->chosen_shipping_methods[ $i ] ) ? WC()->session->chosen_shipping_methods[ $i ] : '';
+    $product_names = array();
+
+    if ( sizeof( $packages ) > 1 ) {
+      foreach ( $package['contents'] as $item_id => $values ) {
+        $product_names[] = $values['data']->get_title() . ' &times;' . $values['quantity'];
+      }
+    }
+
+    //var_dump($package['rates']);
+    //var_dump($package['rates']["free_shipping:8"]);
+    //unset($package['rates']["free_shipping:8"]);
+    foreach ($id as $key => $idd) {
+    	unset($package['rates'][$idd]);
+    }
+    //unset($package['rates'][$id]);
+    //var_dump($package['rates']);
+
+    wc_get_template( 'cart/cart-shipping.php', array(
+      'package'              => $package,
+      'available_methods'    => $package['rates'],
+      'show_package_details' => sizeof( $packages ) > 1,
+      'package_details'      => implode( ', ', $product_names ),
+      'package_name'         => apply_filters( 'woocommerce_shipping_package_name', sprintf( _n( 'Shipping', 'Shipping %d', ( $i + 1 ), 'woocommerce' ), ( $i + 1 ) ), $i, $package ),
+      'index'                => $i,
+      'chosen_method'        => $chosen_method
+    ) );
+  }
+}
+
+// dgamoni update 22-07-16
+function child_remove_parent_function() {
+    remove_action( 'woocommerce_archive_description', 'constance_woocommerce_shop_category', 40 );
+}
+add_action( 'wp_loaded', 'child_remove_parent_function' );
+
+// masonory
+add_action( 'woocommerce_archive_description', 'constance_woocommerce_shop_category_child', 40 );
+function constance_woocommerce_shop_category_child(){
+	
+	$nvr_shopmasonry = constance_woocommerce_use_masonry();
+	
+	$nvr_shopfilter = constance_get_option( 'constance_shop_filter');
+	if(isset($_GET['prodfilter']) && $_GET['prodfilter']=='true'){
+		$nvr_shopfilter = '1';
+	}
+	//$nvr_shopfilter = ( $nvr_shopfilter=="1" && $nvr_shopmasonry)? true : false;
+ 	$nvr_shopfilter = ( $nvr_shopfilter=="1" && !$nvr_shopmasonry)? true : false;
+	
+	if($nvr_shopfilter){
+		$nvr_shopid = constance_get_postid();
+		$nvr_shoppermalink = get_permalink($nvr_shopid);
+		$nvr_producttax = 'product_cat';
+		$nvr_productcats = get_terms( $nvr_producttax, array( 'hide_empty' => true ) );
+		
+		echo '<div class="isotope-filter-container nine columns">';
+			echo '<ul class="isotope-filter">';
+				echo '<li class="firstfilter"><a href="'.esc_url( $nvr_shoppermalink ).'" data-product-slug="" data-option-value="*">'.esc_html__('All', "constance").'</a></li>';
+				foreach($nvr_productcats as $nvr_productcat){
+					$nvr_termlink = get_term_link($nvr_productcat->slug, $nvr_producttax);
+					if ( is_wp_error( $nvr_termlink ) ) {
+						continue;
+					}
+					echo '<li class=""><a href="'.esc_url($nvr_termlink).'" data-product-slug="'.esc_attr($nvr_productcat->slug).'" data-option-value=".product-cat-'. esc_attr( $nvr_productcat->slug ).'">'.$nvr_productcat->name.'</a></li>';
+				}
+			echo '</ul>';
+			echo '<div class="clearfix"></div>';
+		echo '</div>';
+	}
+	
+}
+
+// custom header
+function constance_styles_child() {
+	if (!is_admin()) {
+
+		$nvr_custom_css = constance_print_stylesheet_child();
+		wp_add_inline_style( 'constance_stylecustom', $nvr_custom_css );
+	}
+}
+add_action('wp_enqueue_scripts', 'constance_styles_child');
+
+function constance_print_stylesheet_child(){
+	global $post;
+
+	if (is_single() || is_page()) {
+		$header_url = get_field('oliver_custom_background_header', $post->ID);
+		$nvr_cf_bgHeader = $header_url;
+
+	} else if ( is_tax()) {
+
+		$queried_object = get_queried_object();
+		$term_id = $queried_object->term_id;
+		$taxonomy = $queried_object->taxonomy;
+		$header_url = get_field('oliver_custom_background_header', $taxonomy.'_'.$term_id);
+		$nvr_cf_bgHeader = $header_url;
+
+	} else {
+
+		$nvr_cf_bgHeader 		= '';
+	}
+	
+
+	if($nvr_cf_bgHeader){
+		$nvr_outertopcss .='background-image:url('. $nvr_cf_bgHeader .');';
+	}
+
+	$nvr_print_custom_css .='#outerafterheader, .nvrlayout5 #outertop{'.$nvr_outertopcss.'}';
+
+	return $nvr_print_custom_css;
+}// end function nvr_print_stylesheet_child
+
+
+// youtube embed + get_the_excerpt
+global $wp_embed;
+add_filter( 'get_the_excerpt', array( $wp_embed, 'run_shortcode' ), 9 );
+add_shortcode( 'embed', '__return_false', 9 );
+add_filter( 'get_the_excerpt', array( $wp_embed, 'autoembed' ), 9 );
+$content_width = 490;
+
+// Set notice for Free shipping start from 49.99
+add_action( 'woocommerce_check_cart_items', 'spyr_set_min_total' );
+function spyr_set_min_total() {
+	// Only run in the Cart or Checkout pages
+	if( is_cart() || is_checkout() ) {
+		global $woocommerce;
+
+		$minimum_cart_total = 49.99;
+
+		$total = WC()->cart->subtotal;
+
+		if( $total <= $minimum_cart_total  ) {
+			$gap = $minimum_cart_total - $total;
+			wc_add_notice( sprintf( 
+				'<strong>You need to buy an additional %s %s to get free shipping</strong>',
+				//'<strong>Free shipping start from %s %s </strong>'
+				//.'<br />Current cart\'s total: %s %s',
+				$gap,
+				//$minimum_cart_total,
+				get_option( 'woocommerce_currency'),
+				$total,
+				get_option( 'woocommerce_currency') ),
+			'success' );
+		}
+	}
+}
+
+// custom js
+function oliver_custom_js_child () { 
+	?>
+	<script type="text/javascript">
+
+	jQuery(document).ready(function($){
+
+		// replace header_effect function
+		jQuery(window).load(function(){
+			header_effect();
+		});
+
+		function header_effect(){
+			"use strict";
+			/*=================================== TOPSEARCH ==============================*/
+			var headertext = jQuery('#headertext');
+			var outerheader = jQuery('#outerheader');
+			var outerheaderw = jQuery('#outerheaderwrapper');
+			var outerslider = jQuery('#outerslider');
+			var wpadminbar = jQuery('#wpadminbar');
+			
+			var headertextheight = headertext.height();
+			var headertextinnerh = headertext.innerHeight();
+			var adminbarinnerh = wpadminbar.innerHeight();
+			var outerheaderinnerh = outerheader.innerHeight();
+			var outerheadertop = outerheader.css("top");
+			var windowheight = jQuery(window).height();
+			var headertextoffset = headertext.offset().top;
+			// var outerheaderoffset = outerheader.offset().top;
+// dgamoni fix 
+var outerheaderoffset = 0;
+
+			if(jQuery('body').hasClass('nvrlayout9')!=true){
+				outerheaderw.css('height',outerheaderinnerh);
+			}
+			
+			jQuery(window).scroll(function(evt){
+				var scrolltop = jQuery(document).scrollTop();
+				//console.log(scrolltop);
+				//console.log(outerheaderoffset);
+				
+				if(jQuery('body').hasClass('nvrlayout4')){
+					if(scrolltop>headertextinnerh){
+						headertext.addClass("sticky");
+						outerheader.addClass("sticky");
+						outerslider.addClass("sticky");
+					}else{
+						headertext.removeClass("sticky");
+						outerheader.removeClass("sticky");
+						outerslider.removeClass("sticky");
+					}
+				}else{
+					
+					if(scrolltop>(outerheaderoffset)){
+						outerheader.addClass("sticky");
+						var postopoffset = 0;
+					}else{
+						outerheader.removeClass("sticky");
+						var postopoffset = outerheaderoffset;
+					}
+					if(jQuery('nav.gn-menu-wrapper').hasClass('gn-open-part') || jQuery('nav.gn-menu-wrapper').hasClass('gn-open-all')){
+						var postop = postopoffset + outerheaderinnerh;
+						jQuery('nav.gn-menu-wrapper').css('top', postop);
+					}
+				}
+			});
+		}
+
+		/* Thanks to CSS Tricks for pointing out this bit of jQuery
+		http://css-tricks.com/equal-height-blocks-in-rows/
+		It's been modified into a function called at page load and then each time the page is resized. One large modification was to remove the set height before each new calculation. */
+
+		equalheight = function(container){
+
+		var currentTallest = 0,
+		     currentRowStart = 0,
+		     rowDivs = new Array(),
+		     $el,
+		     topPosition = 0;
+		 $(container).each(function() {
+
+		   $el = $(this);
+		   $($el).height('auto')
+		   topPostion = $el.position().top;
+
+		   if (currentRowStart != topPostion) {
+		     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		       rowDivs[currentDiv].height(currentTallest);
+		     }
+		     rowDivs.length = 0; // empty the array
+		     currentRowStart = topPostion;
+		     currentTallest = $el.height();
+		     rowDivs.push($el);
+		   } else {
+		     rowDivs.push($el);
+		     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+		  }
+		   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+		     rowDivs[currentDiv].height(currentTallest);
+		   }
+		 });
+		}
+
+		$(window).load(function() {
+		  equalheight('body.novaro ul.products li.product');
+		});
+
+
+		$(window).resize(function(){
+		  equalheight('body.novaro ul.products li.product');
+		});
+
+	 });// end ready
+
+	</script>
+<?php
+} 
+add_action( 'wp_footer', 'oliver_custom_js_child', 50 );
+
+ // rules for delivery for size
+function wc_cart_totals_shipping_html_plus_rules() {
+			
+	 // is longer then 70cm in cart, this method not available 
+	// LV state
+	$customer_state = WC()->customer->shipping_country;
+	//var_dump($customer_state);
+	$rules_for_delivery = false;
+	$rules_for_delivery2 = false;
+	$rules_for_delivery3 = false;
+	$size = 71; //Latvijas pasts Latvija
+	$size2 = 61; //Latvijas pasts arzemes
+	$size3 = 91; //arzemes ekspress
+
+
+	foreach ( WC()->cart->get_cart() as $key=>$product_cart ) {
+  		$product_cart_id[$key]	=	$product_cart['product_id'];
+  		$product_var_id[$key]	=	$product_cart['variation_id'];
+  		$res = get_post_meta($product_cart_id[$key]);
+         
+  		//var_dump($product_var_id[$key]);
+        //var_dump($product_cart_id[$key]);
+  		//var_dump($res);
+
+		$_product = wc_get_product($product_cart_id[$key] );
+		if( $_product->is_type( 'simple' ) ) {
+		 	//var_dump(' simple ');
+		 	$_width  = $res['_width'][0];
+			$_length = $res['_length'][0];
+			$_height = $res['_height'][0];
+		} elseif ( $_product->is_type( 'variable' ) ) {
+			//var_dump('variable');
+			$this_variation = new WC_Product( $product_var_id[$key] );
+			$_width  = $this_variation->width;
+			$_length = $this_variation->length;
+			$_height = $this_variation->height;
+		    // var_dump($this_variation->width);
+		    // var_dump($this_variation->length);
+		    // var_dump($this_variation->height);
+		}
+		 // var_dump( $res['_width'][0] );
+		 // var_dump( $res['_length'][0] );
+		 // var_dump( $res['_height'][0] );
+
+
+		if ( ( intval($_width)>=$size ) || ( intval($_length)>=$size ) || ( intval($_height)>=$size ) ) {
+			//echo ' size1 ';
+			$rules_for_delivery = true;
+		} else {
+			//echo ' nosize1 ';
+
+		}
+		if ( ( intval($_width)>=$size2 ) || ( intval($_length)>=$size2 ) || ( intval($_height)>=$size2 ) ) {
+			//echo ' size2 ';
+			$rules_for_delivery2 = true;
+		} else {
+			//echo ' nosize2 ';
+
+		}
+		if ( ( intval($_width)>=$size3 ) || ( intval($_length)>=$size3 ) || ( intval($_height)>=$size3 ) ) {
+			//echo ' size3 ';
+			$rules_for_delivery3 = true;
+		} else {
+			//echo ' nosize3 ';
+		}
+
+	} //end foreach
+
+	 if ( $rules_for_delivery && $customer_state == 'LV' ) {
+	 		//echo ' filter -free_shipping:8","flat_rate:5 ';
+	 		wc_cart_totals_shipping_html_plus_filter_array(array("free_shipping:8","flat_rate:5")); //should be added flat_rate:5
+	 } else if ( $rules_for_delivery3 && $customer_state != 'LV' ) {
+	 		//echo 'filter3 - flat_rate:11","flat_rate:10';
+	 		//wc_cart_totals_shipping_html_plus_filter("flat_rate:11"); //overlaps filter 2
+	 		wc_cart_totals_shipping_html_plus_filter_array(array("flat_rate:11","flat_rate:10"));
+	 } else if ( $rules_for_delivery2 && $customer_state != 'LV' ) {
+	 		//echo ' filter2 - flat_rate:10';
+	 		wc_cart_totals_shipping_html_plus_filter("flat_rate:10");
+	 		//wc_cart_totals_shipping_html();
+	 } else {
+	 		//echo 'default ';
+	 		wc_cart_totals_shipping_html();
+	 }
+} // end rules for delivery

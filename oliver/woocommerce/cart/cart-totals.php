@@ -45,67 +45,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>
 			
-			<?php 
-			 // rules for delivery
-			 // is longer then 70cm in cart, this method not available 
-			// LV state
-			$customer_state = WC()->customer->shipping_country;
-			var_dump($customer_state);
-			$rules_for_delivery = false;
-			$rules_for_delivery2 = false;
-			$rules_for_delivery3 = false;
-			$size = 70;
-			$size2 = 60;
-			$size3 = 90;
-			foreach ( WC()->cart->get_cart() as $key=>$product_cart ) {
-		  		$product_cart_id[$key]	=	$product_cart['product_id'];
-		  		$res = get_post_meta($product_cart_id[$key]);
-		        //var_dump( $res );
-				// var_dump( $res['_width'][0] );
-				// var_dump( $res['_length'][0] );
-				// var_dump( $res['_height'][0] );
-				if ( ( intval($res['_width'][0])>=$size ) || ( intval($res['_length'][0])>=$size ) || ( intval($res['_height'][0])>=$size ) ) {
-					//echo ' size1 ';
-					$rules_for_delivery = true;
-				} else {
-					//echo ' nosize1 ';
-
-				}
-				if ( ( intval($res['_width'][0])>=$size2 ) || ( intval($res['_length'][0])>=$size2 ) || ( intval($res['_height'][0])>=$size2 ) ) {
-					//echo ' size2 ';
-					$rules_for_delivery2 = true;
-				} else {
-					//echo ' nosize2 ';
-
-				}
-				if ( ( intval($res['_width'][0])>=$size3 ) || ( intval($res['_length'][0])>=$size3 ) || ( intval($res['_height'][0])>=$size3 ) ) {
-					//echo ' size3 ';
-					$rules_for_delivery3 = true;
-				} else {
-					//echo ' nosize3 ';
-
-				}
-
-			} //end foreach
-
-			 if ( $rules_for_delivery && $customer_state == 'LV' ) {
-			 		//echo ' filter ';
-			 		wc_cart_totals_shipping_html_plus_filter("free_shipping:8");
-			 } else if ( $rules_for_delivery3 && $customer_state != 'LV' ) {
-			 		//echo 'filter3';
-			 		wc_cart_totals_shipping_html_plus_filter("flat_rate:11");
-			 } else if ( $rules_for_delivery2 && $customer_state != 'LV' ) {
-			 		//echo ' filter2 ';
-			 		wc_cart_totals_shipping_html_plus_filter("flat_rate:10");
-			 		//wc_cart_totals_shipping_html();
-			 } else {
-			 		//echo 'default';
-			 		wc_cart_totals_shipping_html();
-			 }
-
-			 // end rules for delivery
-			  ?> 
-
+			<?php wc_cart_totals_shipping_html_plus_rules(); ?>
 			<?php //wc_cart_totals_shipping_html(); ?>
 
 			<?php do_action( 'woocommerce_cart_totals_after_shipping' ); ?>
